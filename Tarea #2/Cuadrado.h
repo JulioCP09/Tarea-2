@@ -1,12 +1,11 @@
 #pragma once
 #include "FiguraGeometrica.h"
-
-class Triangulo : public FiguraGeometrica
+class Cuadrado : public FiguraGeometrica
 {
 private:
-	float base, altura, lado1, lado2;
+	float lado;
 public:
-	Triangulo(float b, float a, float l1, float l2);
+	Cuadrado(float l);
 	float Area() override;
 	float Perimetro() override;
 	void mostrar();

@@ -13,3 +13,19 @@ float Triangulo::Perimetro()
 {
 	return base + lado1 + lado2;
 }
+
+void Triangulo::mostrar()
+{
+	float base, altura, lado1, lado2;
+	cout << "Ingrese la base del triangulo: ";
+	cin >> base;
+	cout << "Ingrese la altura del triangulo: ";
+	cin >> altura;
+	cout << "Ingrese el lado 1 del triangulo: ";
+	cin >> lado1;
+	cout << "Ingrese el lado 2 del triangulo: ";
+	cin >> lado2;
+	Triangulo triangulo(base, altura, lado1, lado2);
+	cout << "Area del triangulo: " << triangulo.Area() << endl;
+	cout << "Perimetro del triangulo: " << triangulo.Perimetro() << endl;
+}

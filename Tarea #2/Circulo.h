@@ -9,5 +9,6 @@ public:
 	Circulo(float r);
 	float Area() override;
 	float Perimetro() override;
+	void mostrar();
 };
 
